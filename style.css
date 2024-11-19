@@ -1,0 +1,123 @@
+/*EVERYTHING*/
+*{
+    box-sizing: border-box;
+}
+body{
+   color:darkslateblue; 
+   background-color: rgb(224, 230, 235);
+}
+header{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+    text-align: center;
+}
+header h1{
+    font-weight: 900;
+    letter-spacing: 6px;
+}
+header h5{
+    font-family: monospace;
+    font-size: large;
+}
+main{
+    font-family: Noto Sans, sans-serif ;
+    display: flex;
+}
+
+/*HOME PAGE*/
+
+#homeImg{
+    height: 500px;
+    display: inline;
+    margin-left: 20px;
+    margin-right: 100px;
+}
+.button{
+    background-color: darkslateblue;
+    padding: 50px;
+    color: white;
+    margin-left: 80px;
+    margin-top: 90px;
+    margin-bottom: 800px;
+
+    border-radius: 20%;
+}
+
+/*CONTACT PAGE*/
+
+#contactImg{
+    width: 100%;   
+}
+#contact ul{
+    position:absolute;
+    margin-top: 350px;
+    margin-left: 450px;
+    padding: 55px;
+    background-color: white;
+    text-align: center;
+
+}
+
+/*PROJECTS*/
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project{
+    width: 45%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.project #projectImg{
+    height: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+.project .project-description{
+    padding: 0px 10px 0px 10px;
+    background-color: rgb(108, 108, 108);
+    color: rgb(224, 230, 235);
+    
+}
+.project .project-description p{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 15px;
+    padding: 10px;
+}
+
+/*ABOUT*/
+
+#about p{
+    grid-column: 2/3;
+}
+
+/*NAVBAR*/
+
+nav a{
+    text-decoration: none;
+    color: darkslateblue;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+nav a:hover, .active{
+    background-color: darkslateblue;
+    color: white;
+}
+
+nav ul{
+    list-style-type: none;
+    text-align: center;
+    background-color: plum;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 20px;
+}
